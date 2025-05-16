@@ -30,7 +30,7 @@ function weatherShowFn(data) {
   $('#weather-icon').attr('src', `http://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png`);
   $('#weather-info').fadeIn();
 
-  // Background switching based on day/night
+  
   const iconCode = data.weather[0].icon;
   let bg = '';
   if (iconCode.includes('n')) {
